@@ -59,14 +59,14 @@ export default function Login() {
 
         <div className="mt-4 sm:mx-auto sm:w-full sm:max-w-md">
           <div className="bg-white py-8 px-6 shadow rounded-lg sm:px-10">
-            <h2 className="text-center text-2xl font-bold leading-9 tracking-tight text-red-900">
+            <h2 className="text-center text-2xl font-bold leading-9 tracking-tight text-black">
               Sign in to your account
             </h2>
             <form className="mt-6 space-y-6" onSubmit={onSubmit}>
               <div>
                 <label
                   htmlFor="email"
-                  className="block text-sm font-medium text-red-700"
+                  className="block text-sm font-medium text-black"
                 >
                   Email address
                 </label>
@@ -87,7 +87,7 @@ export default function Login() {
               <div>
                 <label
                   htmlFor="password"
-                  className="block text-sm font-medium text-red-700"
+                  className="block text-sm font-medium text-black"
                 >
                   Password
                 </label>
@@ -108,7 +108,7 @@ export default function Login() {
               <div>
                 <label
                   htmlFor="role"
-                  className="block text-sm font-medium text-red-700"
+                  className="block text-sm font-medium text-black"
                 >
                   Sign in as
                 </label>
@@ -154,7 +154,7 @@ export default function Login() {
             {errorMessage && (
               <p className="mt-4 text-red-600 text-center">{errorMessage}</p>
             )}
-            <p className="mt-6 text-center text-sm text-red-800">
+            <p className="mt-6 text-center text-sm text-black">
               Not a member?{" "}
               <Link
                 to="/signup"
